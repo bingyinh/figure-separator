@@ -6,7 +6,7 @@ author:satoshi tsutsui
 a simple version with one file.
 '''
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import sys
 # sys.path.insert(0, './')
 import numpy as np

@@ -6,8 +6,8 @@ author:satoshi tsutsui
 FigureSeparator class
 '''
 
-import tensorflow as tf
-from utils import postprocess,preprocess,load_graph
+import tensorflow.compat.v1 as tf
+from .utils import postprocess,preprocess,load_graph
 
 class FigureSeparator:
     def __init__(self,model,thresh=0.5):

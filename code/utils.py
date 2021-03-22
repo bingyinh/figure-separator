@@ -6,15 +6,15 @@ author:satoshi tsutsui
 utilities
 '''
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import sys
 # sys.path.insert(0, './')
 import numpy as np
 import math
 import cv2
 import os
-from box import BoundBox, box_iou, prob_compare
-from box import prob_compare2, box_intersection
+from .box import BoundBox, box_iou, prob_compare
+from .box import prob_compare2, box_intersection
 import argparse
 
 def expit(x):
