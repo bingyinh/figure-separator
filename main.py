@@ -6,7 +6,7 @@ author:satoshi tsutsui
 Bulk figure extractor
 '''
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from code.utils import postprocess,preprocess,load_graph
 import os
 import cv2
